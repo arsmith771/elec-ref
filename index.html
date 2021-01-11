@@ -301,6 +301,12 @@ background-repeat: no-repeat;
 
     .amountSubhead.active, .youSubhead.active, .paySubhead.active {
         background-color: #FE99BD;
+    } + label {
+
+    }
+
+    #en__field_supporter_questions_849904, #en__field_supporter_questions_849904 + label {
+        display: none;
     }
 </style>
 <!--Andrew end-->
@@ -625,10 +631,8 @@ style="
    </div>
 </div>
 
-	
-	
-</div>
-		<div class="en__component en__component--copyblock"
+
+<div class="en__component en__component--copyblock"
 
 style="
 
@@ -640,11 +644,15 @@ style="
 
 "
 >
-	<p><a class="button" href="#aboutYou">Next step</a></p>
+    <p><a class="button" href="#aboutYou">Next step</a></p>
 
+    
+    
+</div>
 	
 	
 </div>
+		
 		<div class="en__component en__component--copyblock subHead youSubhead"
 
 style="
@@ -965,9 +973,7 @@ style="
 </div>
 
 	
-	
-</div>
-		<div class="en__component en__component--copyblock"
+	<div class="en__component en__component--copyblock"
 
 style="
 
@@ -979,11 +985,13 @@ style="
 
 "
 >
-	<p><a class="button" href="#bankDetails">Last step - please add bank details</a></p>
+    <p><a class="button" href="#bankDetails">Last step - please add bank details</a></p>
 
-	
-	
+    
+    
 </div>
+</div>
+		
 		<div class="en__component en__component--copyblock subHead paySubhead"
 
 style="
@@ -1168,15 +1176,34 @@ style="
 <script type='text/javascript' src='https://www.electoral-reform.org.uk/wp-content/themes/fonzie/js/min/daterangepicker.js?ver=4.8'></script>
 <script type='text/javascript' src='https://www.electoral-reform.org.uk/wp-content/themes/fonzie/js/min/slick.min.js?ver=4.8'></script>
 <script type='text/javascript' src='https://www.electoral-reform.org.uk/wp-content/themes/fonzie/js/min/scripts.min.js?ver=20120206'></script>
-<script>
-$( document ).ready(function() {
-    $('.en__field--donationAmt .en__field__label--item').html(function(){
-    return $(this).html().replace('per month','<br/><span class="perMonth">per month</span>');
-});
-});
-</script>
+
 
 <!-- Andrew begin -->
+<script>
+    $( document ).ready(function() {
+
+        $('body').on('input', 'input[name="supporter.questions.850099"]', function(){
+
+            console.log('Y/N');
+
+           // $('#transaction_donationAmt0 + label').html(function(){
+
+                var str =  $('#transaction_donationAmt0 + label').text();
+
+
+                var changed = str.replace('per month','xxx');
+
+                console.log(changed);
+
+
+                //return $(this).html().replace('per month','<br/><span class="perMonth">per month</span>');
+                // $(this).html().replace('per month','xxx');
+           // });
+        });
+
+    });
+</script>
+
 <script>
 
     function addCloseBtn(){
@@ -1251,7 +1278,9 @@ $( document ).ready(function() {
         $('.aims-objectives-block .button').on('click', function(event){
 
             $('.aims-objectives-block').removeClass('open');
-            $('#en__field_supporter_questions_849904').attr('checked', true);
+            $('#en__field_supporter_questions_849904, #en__field_supporter_questions_849904 + label').show()
+            $('#en__field_supporter_questions_849904').attr('checked', true).attr('disabled', true);
+            $('#en__field_supporter_questions_849904, #en__field_supporter_questions_849904 + label').css('cursor','not-allowed');
             $('a[href^="#aims"]').css('visibility','hidden');
             event.preventDefault();
 
@@ -1286,6 +1315,23 @@ $( document ).ready(function() {
         });
     }
     
+    function showElem(){
+
+        $('form').on('submit', function(){
+
+            console.log('form submitted');
+
+            var errorElem = $('.en__field__error');
+
+            if (errorElem.length) {
+
+                errorElem.each(function(){
+
+                    $(this).closest('.en__component--formblock').show();
+                })
+            }
+        });
+    }
 
     $( document ).ready(function() {
 
@@ -1296,6 +1342,7 @@ $( document ).ready(function() {
         nextStep();
         lastStep();
         accordion();
+        showElem();
     });
 </script>
 <!--Andrew end -->
