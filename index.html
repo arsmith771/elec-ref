@@ -1,0 +1,1305 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<style>
+    .ers-branding__logo{width:7.625rem;height:4.5rem}
+    .ers-branding__nav .sub-menu{display:none}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+
+<title>Electoral Reform Society</title>
+<meta name="robots" content="noindex" />
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KVCTJJP');</script>
+<!-- End Google Tag Manager -->	
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1597334817264022');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1597334817264022&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='ers-crimson-font-css'  href='https://fonts.googleapis.com/css?family=Crimson+Text%3A400%2C400i%2C700%2C700i&#038;ver=4.8' type='text/css' media='all' />
+<link rel='stylesheet' id='ers-style-css'  href='https://www.electoral-reform.org.uk/wp-content/themes/fonzie-electoral-reform-society/css/style.css?ver=4.8' type='text/css' media='all' />
+<link rel="icon" href="https://www.electoral-reform.org.uk/wp-content/uploads/2017/06/cropped-favicon-150x150.png" sizes="32x32" />
+
+<style>
+
+/*----------links street additions-------------------*/
+.membForm {
+    width: 92%!important;
+    margin: auto;
+}
+.membForm .en__field__label {
+    display: block;
+    width: 100%;
+}
+.en__field > .en__field__label {
+font-family: Crimson Text,Times New Roman,serif;
+font-size: 1.2em;
+font-weight: normal;
+}
+/*-------donation amounts----------*/
+.amountForm input[type=radio] {
+    display: none;
+}
+.amountForm input[type="radio"] + label {
+    background-color: #fff;
+    color: #313b52;
+    text-align: center;
+    padding: 8px 10px;
+    transition: 0.1s ease-in-out;
+    margin-bottom: 0;
+    cursor: pointer;
+    border: solid 1px #313b52;
+    border-radius: 2px;
+    font-weight: bold;
+   width: 150px;
+}
+.en__field--donationAmt .en__field__item {
+    width: 31%;
+}
+.perMonth {
+    font-size: .8em!important;
+}
+
+.amountForm input[type="radio"]:checked + label, .amountForm input[type="radio"] + label:hover {
+background-color: #313b52;
+    color: #ffffff;
+    font-weight: bold;
+}
+.en__field--donationAmt .en__field__item .en__field__label--item:nth-of-type(2):before {
+content: "Most popular";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width:100%;
+    height: 1.25rem;
+    border: 0.125rem solid #aeaeae;
+    margin-top: 0px;
+    background: #ccc;
+}
+.amountForm input[type=radio]+label:before, .amountForm input[type=radio]:checked+label:before {
+    border: none;
+     background: transparent;
+}
+.amountForm input[type=radio]:checked+label:after, .amountForm input[type=radio]:checked+label:before {
+    background: transparent;
+}
+.en__field--donationAmt input[type="radio"] + label {
+    padding: 32px 10px;
+    font-size: 1.4em;
+}
+.en__field--850072, .en__field--850099 {
+    border-bottom: dashed 1px #303b52;
+    margin-bottom: 10px;
+    padding-bottom: 14px;
+}
+.subHead {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.625rem;
+    border-radius: 0.25rem;
+    background-color: #dcdcdc;
+  padding: 15px 20px 15px 20px;
+}
+.activeSubhead {
+    background-color: #fd98bc;
+    color: #000;
+}
+.en__field--membership-send-bag {
+background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1754/ers-member-tote-bag-100px.jpg?v=1609863891000");
+background-repeat: no-repeat;
+    background-position: right;
+    background-size: 60px;
+}
+
+.en__field--membership-send-bag .en__field__element--checkbox {
+    padding-right: 80px;
+}
+.subHead h2 {
+   margin: 0px;
+   padding: 0px;
+   color: #fff;
+}
+.aboutForm {
+    display: flex;
+    flex-wrap: wrap;
+}
+.aboutForm .en__field {
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0px 10px 0px 10px;
+    flex: 1 1 230px;
+}
+.en__component--row--1:nth-of-type(2) {
+    max-width: 670px;
+    margin: -9em auto 0px auto;
+    z-index: 5;
+    background-color: #fff;
+    padding: .5em 5%;
+}
+.button {
+    border-radius: 5px;
+    font-family: Din Bold,Helvetica Neue,Arial,sans-serif;
+    color: #313b52;
+    font-size: 16px;
+    padding: 12px 16px;
+    background-color: #fd98bc;
+    border: 0.0625rem solid transparent;
+    line-height: 1.5rem;
+}
+ .button:hover, .button:focus {color: #fff; background-color: #313b52; }
+    @font-face {
+    	font-family: "Din Regular";
+    	src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1754/din-regular-webfont.eot?v=1499435275000");
+    	src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1754/din-regular-webfont.eot?v=1499435275000?#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1754/din-regular-webfont.woff2?v=1499435275000") format("woff2"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1754/din-regular-webfont.woff?v=1499435275000") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1754/din-regular-webfont.ttf?v=1499435275000") format("truetype");
+    	font-weight: 500;
+    	font-style: normal;
+    }
+    
+    @font-face {
+    	font-family: "Din Bold";
+    	src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1754/din-bold-webfont.eot?v=1499435275000");
+    	src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1754/din-bold-webfont.eot?v=1499435275000?#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1754/din-bold-webfont.woff2?v=1499435275000") format("woff2"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1754/din-bold-webfont.woff?v=1499435275000") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1754/din-bold-webfont.ttf?v=1499435275000") format("truetype");
+    	font-weight: 500;
+    	font-style: normal;
+    }
+    
+    .en__component--formblock { max-width: 700px; width: 100%; }
+    .en__component--formblock .en__field__label--positionabove { width: 100%; }
+    .en__component--formblock .en__field__element { width: 100%; }
+    .en__component--formblock .en__field--title .en__field__element, 
+    .en__component--formblock .en__field--postcode .en__field__element { max-width: 150px; }
+    .en__component--formblock .en__field--ccvv .en__field__element, .en__component--formblock .en__field--paycurrency .en__field__element, .en__component--formblock .en__field--recurrday .en__field__element, .en__component--formblock .en__field--issuenumb .en__field__element { max-width: 100px; }
+  /*  .en__component--formblock .en__field--recurrpay, .en__component--formblock .en__field--recurrfreq { display: none; }*/
+    .en__component--formblock select { padding: 18px 35px 18px 17px; }
+    .en__submit button { border-radius: 5px; font-family: Din Bold,Helvetica Neue,Arial,sans-serif; color: #313b52; font-size: 16px; padding: 12px 16px; background-color: #fd98bc; border: 0.0625rem solid transparent; line-height: 1.5rem; }
+    .en__submit button:hover, .en__submit button:focus { color: #fff; background-color: #313b52; }
+    .en__field__error { color: #bf0404; }
+    .en__component--formblock .en__field__input--select { min-width: 100px; }
+    .en__field--checkbox.en__field--question { display: flex; align-items: flex-start; flex-direction: row-reverse; }
+    /*.en__field--checkbox.en__field--question label { flex: 1; padding: 0; margin: 0; width: auto; }
+    .en__field--checkbox.en__field--question .en__field__element--checkbox { flex: 0; flex-basis: 21px; margin: 0 10px 0 0; width: auto; } */
+    .en__field--checkbox.en__field--question .en__field__element--checkbox .en__field__label.en__field__label--item { display: block; vertical-align: initial; }
+
+.en__field__element.en__field__element--tripleselect {
+    opacity: 0.5;
+}
+
+.en__field--recurrstart select{
+    
+    background-image: none !important;
+}
+
+
+    .en__field__label {
+    width: 50%;
+}
+
+</style>
+
+<!--Andrew begin-->
+<style>
+    .amountForm, .aboutForm, .payForm {
+        display: none;
+    }
+    .accordion {
+        cursor: pointer;
+    }
+    .en__component.aims-objectives-block{
+        background-color:#313B52;
+        padding:calc(2em + 7vw) 4% 0 4%;
+        position: fixed;
+        top:0;
+        bottom: 0;
+        right:-600px;
+        left: auto;
+        width:90%;
+        max-width: 600px;
+        z-index: 1;
+        overflow: auto;
+        transition: all .4s;
+    }
+    .aims-objectives-block h2 {
+        color: white;
+    }
+    .aims-objectives-block > div {
+        background-color:white;
+        overflow: auto;
+        max-height: 250px;
+        margin-bottom:30px;
+        padding:0.8em;
+    }
+    .aims-objectives-block.open{
+        right:0;
+    }
+
+    .closeOverlay {
+        position: absolute;
+        top:20px;
+        right: 40px;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        padding: 12px 20px;
+    }
+    @media (max-width: 600px){
+        .closeOverlay {
+            top:10px;
+        }
+    }
+    .closeOverlay:before,
+     .closeOverlay:after {
+        content:'';
+        position: absolute;
+        right:0;
+        width:2px;
+        background-color:white;
+        height: 1.4em;
+        transform: rotate(45deg);
+    }
+    .closeOverlay:after {
+        transform: rotate(-45deg);
+    }
+    .closeOverlay:hover,
+    .closeOverlay:focus,
+    .closeOverlay:active {
+        color: white;
+    }
+
+    .amountSubhead, .youSubhead, .paySubhead {
+        transition: all .3s;
+    }
+
+    .amountSubhead.active, .youSubhead.active, .paySubhead.active {
+        background-color: #FE99BD;
+    }
+</style>
+<!--Andrew end-->
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@electoralreform" />
+
+<meta name="title" content=""/>
+<meta property="og:title" content=""/>
+<meta property="og:description" content=""/>
+<meta name="description" content=""/>
+<meta property="og:image" content=""/>
+<link rel="canonical" href="https://electoral-reform.netdonor.net/page/73434/donate/1?mode=DEMO&amp;locale=en-GB"/>
+<meta property="og:url" content="https://electoral-reform.netdonor.net/page/73434/donate/1?mode=DEMO&amp;locale=en-GB"/>
+<link rel="image_src" href=""/>
+<link href='https://electoral-reform.netdonor.net/ea-demo/frontend/pbAssets/build/css/enPage.css?v=3.60.1' rel='stylesheet' type='text/css' />
+<script>var pageJson = {"clientId":1754,"pageName":"Membership LS 2021","pageCount":2,"redirectPresent":false,"giftProcess":false,"pageNumber":1,"campaignPageId":73434,"campaignId":201821,"pageType":"donation","locale":"en-GB"};</script>
+<script src='https://electoral-reform.netdonor.net/page/73434/pagedata.js?locale=en-GB&ea.profile.id=0'></script>
+<script src='https://electoral-reform.netdonor.net/ea-demo/frontend/pbAssets/build/js/enPage.js?v=3.60.1'></script>
+</head>
+
+<body class="home page-template-default page page-id-121 group-blog">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVCTJJP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="ers-masthead" class="ers-site-header" role="banner">
+		<section class="ers-toolbar">
+			<div class="container-fluid">
+				<div class="ers-toolbar__upper" style="height: 51px;"></div>
+			</div>
+		</section>
+
+		<div class="container-fluid">
+			<div class="ers-branding">
+				<a href="https://www.electoral-reform.org.uk" class="ers-branding__logo">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 345.99 186.22"><title>Electoral Reform Society Logo</title><path d="M78.78 50.59V3.21H110v8.25H88v11.11h18.7v8.25H88v11.52h22v8.25zm49.39 0c-7.12 0-10.12-5-10.12-9.92V3.21h8.65v36.93c0 2.06.87 3.13 3.06 3.13h3.33v7.32zM145.14 36c0 4.46 2.73 7.72 7.59 7.72a9.6 9.6 0 0 0 7.85-3.26l5.26 5.12c-3.53 3.53-6.92 5.46-13.18 5.46-8.19 0-16-3.73-16-17.77 0-11.31 6.12-17.7 15.11-17.7 9.65 0 15.11 7.05 15.11 16.57V36zm12.38-9.65a6.46 6.46 0 0 0-11.58 0 9.56 9.56 0 0 0-.8 3.73h13.18a9.56 9.56 0 0 0-.8-3.78zM188.59 51c-6.92 0-15.51-3.73-15.51-17.77s8.59-17.7 15.51-17.7A14.77 14.77 0 0 1 200 20.18L194.19 26c-1.8-1.93-3.33-2.73-5.59-2.73a6 6 0 0 0-4.92 2.26c-1.33 1.66-1.93 4-1.93 7.65s.6 6.06 1.93 7.72a6 6 0 0 0 4.92 2.26c2.26 0 3.79-.8 5.59-2.73l5.81 5.84A14.82 14.82 0 0 1 188.59 51zm29.02-.41c-7.05 0-10-5-10-9.92V23.51h-3.71v-6.59h3.66V6.67h8.65v10.25h6.12v6.59h-6.12v16.63c0 2 .93 3.13 3 3.13h3.13v7.32zm36.34-3.86A14.37 14.37 0 0 1 243.17 51a14.21 14.21 0 0 1-10.71-4.26c-3.13-3.26-3.93-7.19-3.93-13.51s.8-10.18 3.93-13.44a14.21 14.21 0 0 1 10.71-4.26 14.37 14.37 0 0 1 10.78 4.26c3.13 3.26 3.93 7.19 3.93 13.44s-.8 10.24-3.93 13.5zm-6.72-21.9a5.47 5.47 0 0 0-4.06-1.53 5.31 5.31 0 0 0-4 1.53c-1.8 1.8-2 4.79-2 8.39s.2 6.66 2 8.45a5.31 5.31 0 0 0 4 1.53 5.47 5.47 0 0 0 4.06-1.53c1.8-1.8 2-4.86 2-8.45s-.23-6.59-2-8.38zm37.77.54a5.77 5.77 0 0 0-4.59-2.06c-2.66 0-5.59 2-5.59 6.39v20.9h-8.65V15.92h8.45v3.33a11.74 11.74 0 0 1 8.72-3.73 10.46 10.46 0 0 1 8.19 3.26zm28.51 25.22v-3c-2.33 2.33-4.53 3.33-8.52 3.33s-6.79-1-8.85-3.06a11.11 11.11 0 0 1-2.86-7.79c0-5.52 3.79-10 11.85-10h8.19V28.3c0-3.79-1.86-5.46-6.46-5.46-3.33 0-4.86.8-6.66 2.86l-5.52-5.39c3.39-3.73 6.72-4.79 12.51-4.79 9.72 0 14.77 4.13 14.77 12.25v22.82zm-.2-14.59h-6.86c-3.13 0-4.86 1.46-4.86 3.93s1.6 4 5 4c2.4 0 3.93-.2 5.46-1.66.93-.87 1.26-2.26 1.26-4.39zm27.76 14.59c-7.12 0-10.12-5-10.12-9.92V3.21h8.65v36.93c0 2.06.87 3.13 3.06 3.13H346v7.32zm-237.13 60.56l-9.25-18.9H88v18.9h-9.22V63.77h18.57c9.65 0 15.37 6.59 15.37 14.51a12.76 12.76 0 0 1-8.65 12.45l10.58 20.43zM96.75 72H88v12.53h8.72c4.06 0 6.72-2.6 6.72-6.26S100.81 72 96.75 72zm31.68 24.51c0 4.46 2.73 7.72 7.59 7.72a9.6 9.6 0 0 0 7.85-3.26l5.26 5.12c-3.53 3.53-6.92 5.46-13.18 5.46-8.19 0-16-3.73-16-17.77 0-11.31 6.12-17.7 15.11-17.7 9.65 0 15.11 7.05 15.11 16.57v3.86zm12.38-9.65a6.46 6.46 0 0 0-11.58 0 9.56 9.56 0 0 0-.8 3.73h13.18a9.56 9.56 0 0 0-.8-3.73zm27.02-2.8v27.09h-8.65V84.06h-3.59v-6.58h3.59v-4.33c0-4.92 3.06-9.92 10.12-9.92h4.92v7.32h-3.39c-2.06 0-3 1.13-3 3.13v3.79h6.39v6.59zm35.94 23.23a14.37 14.37 0 0 1-10.77 4.26 14.21 14.21 0 0 1-10.71-4.26c-3.13-3.26-3.93-7.19-3.93-13.51s.8-10.18 3.93-13.44A14.21 14.21 0 0 1 193 76.08a14.37 14.37 0 0 1 10.78 4.26c3.13 3.26 3.93 7.19 3.93 13.44s-.81 10.22-3.94 13.51zM197 85.4a5.47 5.47 0 0 0-4-1.53 5.31 5.31 0 0 0-4 1.53c-1.8 1.8-2 4.79-2 8.39s.2 6.66 2 8.45a5.31 5.31 0 0 0 4 1.53 5.47 5.47 0 0 0 4.06-1.53c1.8-1.8 2-4.86 2-8.45s-.22-6.6-2.06-8.39zm37.78.53a5.77 5.77 0 0 0-4.59-2.06c-2.66 0-5.59 2-5.59 6.39v20.9h-8.65V76.48h8.45v3.33a11.74 11.74 0 0 1 8.72-3.73 10.46 10.46 0 0 1 8.19 3.26zm51.78 25.22v-21c0-4.73-3-6.32-5.72-6.32S275 85.46 275 90v21.16h-8.65v-21c0-4.73-3-6.32-5.72-6.32s-5.79 1.6-5.79 6.32v21h-8.65V76.48h8.45v3.19a12.13 12.13 0 0 1 8.65-3.59 10.74 10.74 0 0 1 9.18 4.39 13.22 13.22 0 0 1 10.38-4.39 12.1 12.1 0 0 1 8.52 3.06 13.07 13.07 0 0 1 3.84 9.86v22.16zM92.43 172.11c-7.05 0-11.45-1.93-15.77-6.26l2.53-2.53c4.26 4.26 7.72 5.59 13.44 5.59 7.45 0 12.18-3.59 12.18-9.78a8.58 8.58 0 0 0-2.6-6.66c-1.73-1.46-3-1.93-6.85-2.53l-5.52-.87a16.43 16.43 0 0 1-8.45-3.46 10.78 10.78 0 0 1-3.73-8.72c0-7.92 5.66-13 14.71-13a18.73 18.73 0 0 1 13.63 5.16l-2.33 2.33A15.4 15.4 0 0 0 92.16 127c-6.85 0-11 3.79-11 9.78 0 2.73.8 4.79 2.46 6.19a15.11 15.11 0 0 0 7.05 2.93l5.12.8c4.46.67 6.46 1.46 8.45 3.13a11.64 11.64 0 0 1 4.16 9.17c0 8-6.12 13.11-15.97 13.11zm46.32-3.53a13 13 0 0 1-17.84 0c-3.39-3.39-4-8.32-4-12.91s.6-9.52 4-12.91a13 13 0 0 1 17.84 0c3.39 3.39 4 8.32 4 12.91s-.61 9.52-4 12.91zM136.48 145a9.48 9.48 0 0 0-13.31 0c-2.66 2.66-2.86 7-2.86 10.71s.2 8.05 2.86 10.71a9.48 9.48 0 0 0 13.31 0c2.66-2.66 2.86-7 2.86-10.71s-.19-8.09-2.86-10.71zM166 172.11c-8.72 0-14.11-6.26-14.11-16.44s5.39-16.44 14.11-16.44c4.39 0 7.12 1.13 10.58 4.92l-2.33 2.13c-2.73-3.06-4.86-4.06-8.25-4.06a9.93 9.93 0 0 0-8.52 4.26c-1.6 2.33-2.2 4.86-2.2 9.18s.6 6.85 2.2 9.18a9.93 9.93 0 0 0 8.52 4.26c3.39 0 5.52-1 8.25-4.06l2.33 2.13c-3.43 3.83-6.15 4.94-10.58 4.94zm20.2-43.59v-4.19h4.19v4.19zm.4 43.19v-32.08h3.4v32.08zm17.83-15.31c0 8.12 3.66 12.65 10.45 12.65 3.79 0 6.12-1.13 8.85-3.86l2.53 2c-3.26 3.26-6.26 4.92-11.58 4.92-8.85 0-13.64-5.72-13.64-16.44 0-10.32 4.79-16.44 12.84-16.44s12.84 5.86 12.84 15.64v1.53zm17.77-8.78a9.11 9.11 0 0 0-16.64 0 14.86 14.86 0 0 0-1.13 6.06h18.9a14.86 14.86 0 0 0-1.13-6.06zm24.03 24.09c-5.06 0-7.72-3.53-7.72-8.39v-21.16h-4.39v-2.53h4.39v-10.25h3.39v10.25h7.25v2.53h-7.25v21.23c0 3.33 1.53 5.32 4.92 5.32h2.33v3zm19.43 8.72a8.25 8.25 0 0 1-2.2 3.73 8.72 8.72 0 0 1-6.06 2.06h-1.6v-3h1.26c3.66 0 4.66-1.2 5.86-4.39l2.6-7.12-11.71-32.08h3.73l9.65 28.08 9.65-28.08h3.73z" fill="#303a52"/><path d="M52.55 52.55H0V0h52.55zM5.07 47.49h42.42V5.07H5.07z" fill="#574b90"/><path d="M52.55 113.83H0V61.28h52.55zm-47.48-5.07h42.42V66.34H5.07z" fill="#9e579d"/><path d="M52.55 175.11H0v-52.56h52.55zM5.07 170h42.42v-42.38H5.07z" fill="#fc85ae"/></svg>				</a>
+
+				<nav class="ers-branding__nav" role="navigation"></nav>
+
+			</div>
+		</div>
+	</header><!-- #masthead -->
+	
+	<div class="breadcrumbs" role="navigation" style="display: block;">
+	    <div class="container-fluid">
+	        < <a href="https://www.electoral-reform.org.uk">Back to main site</a> 
+        </div>
+    </div>
+	        
+    <div id="content" class="site-content">
+
+    	<div id="primary" class="content-area">
+	    	<div class="container-fluid">
+		    	<main id="main" class="site-main" role="main">
+					<div class="content-block">
+<form method="post" action="/page/73434/donate/2" class="en__component en__component--page">
+	<input type="hidden" name="hidden" class="en__hiddenFields" value="">
+	<input type="hidden" name="sessionId" value="b98bfa7029c2453a991fcbb418d90b66-server9800">
+	
+	
+	
+	
+	
+	<ul class="en__errorList">
+	</ul>
+
+		<div class="en__component en__component--row en__component--row--1">
+		<div class="en__component en__component en__component--column">
+		<div class="en__component en__component--imageblock">
+	<img src="https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1754/ERS+members.jpg?v=1500563650000" class="pageImage" height="440" width="1200" alt="ERS members" data-unit="px" data-ratio-lock="true" style="height: 440px; width: 1200px;">
+	
+	
+</div>
+</div>
+</div>
+		<div class="en__component en__component--row en__component--row--1">
+		<div class="en__component en__component en__component--column en__component--column--1">
+		<div class="en__component en__component--copyblock"
+
+style="
+
+
+
+
+
+
+
+"
+>
+	<h1>Become a member</h1>
+
+<p>By deciding to become a member of the ERS you can help us win the fight for electoral reform. In order to set up a Direct Debit instruction online, you must be the account holder of a personal bank or building society account.</p>
+
+<p>If multiple signatures are required or you prefer to send us your information via post you can <a data-id="null" data-name="paper-mandate" data-type="external_url_pb" href="https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1754/Electoral+Reform+Society+mandate.pdf">download a paper mandate</a>.</p>
+
+<p>You must agree with the Aims and Objectives of the Electoral Reform Society to join. All members are added to our register of members.</p>
+
+	
+	
+</div>
+		<div class="en__component en__component--copyblock"
+
+style="
+
+
+
+
+
+
+
+"
+>
+	<p><a class="button" href="#aims">Quick read - Aims and Objectives</a></p>
+
+	
+	
+</div>
+
+<!--Andrew begin-->
+<div class="en__component en__component--copyblock aims-objectives-block">
+    
+    <h2>Aims and Objectives</h2>
+    <div>
+        <p>According to the Society’s Articles, the objects of the Society are:</p>
+        <ol>
+            <li>To secure the adoption of the principle of proportional representation etc</li>
+            <li>etc</li>
+            <li>etc</li>
+            <li>etc</li>
+            <li>etc</li>
+            <li>etc</li>
+            <li>etc</li>
+        </ol>
+    </div>
+
+    <p><a class="button" href="#">I agree with the aims and objectives</a></p>
+
+</div>
+<!--Andrew end-->
+
+<div class="en__component en__component--copyblock"
+
+style="
+
+
+
+
+
+
+
+"
+>
+		
+</div>
+        <div class="en__component en__component--formblock" style="">
+	
+	
+			<div class="en__field en__field--checkbox en__field--question en__field--849904 en__field--agree-with-aims-and-obectives en__mandatory">
+	<div class="en__field__element en__field__element--checkbox
+	" >
+		<div class="en__field__item">
+			<input id="en__field_supporter_questions_849904" type="checkbox" class="en__field__input en__field__input--checkbox" value="Y" name="supporter.questions.849904" />
+			<label for="en__field_supporter_questions_849904" class="en__field__label en__field__label--item" >I agree with the Aims and Objectives</label>
+		</div>
+	</div>
+</div>
+
+	
+	
+</div>
+		<div class="en__component en__component--copyblock subHead amountSubhead"
+
+style="
+
+
+
+
+
+
+
+"
+>
+	<h2>Membership amount</h2>
+
+	
+	
+</div>
+		<div class="en__component en__component--formblock amountForm membForm" style="">
+	
+	
+			<div class="en__field en__field--radio en__field--850072 en__field--NOT_TAGGED_4 en__mandatory">
+	<label for="en__field_supporter_NOT_TAGGED_4" class="en__field__label" style="">Choose your payment frequency</label>
+	<div class="en__field__element en__field__element--radio
+" >
+		<div class="en__field__item">
+			<input id="en__field_supporter_NOT_TAGGED_40" type="radio" class="en__field__input en__field__input--radio" value="Monthly" name="supporter.NOT_TAGGED_4" />
+			<label for="en__field_supporter_NOT_TAGGED_40" class="en__field__label en__field__label--item" >Monthly</label>
+		</div>
+		<div class="en__field__item">
+			<input id="en__field_supporter_NOT_TAGGED_41" type="radio" class="en__field__input en__field__input--radio" value="Annual" name="supporter.NOT_TAGGED_4" />
+			<label for="en__field_supporter_NOT_TAGGED_41" class="en__field__label en__field__label--item" >Annual</label>
+		</div>
+	</div>
+</div>
+			<div class="en__field en__field--radio en__field--question en__field--850099 en__field--concession-membership en__mandatory">
+	<label for="en__field_supporter_questions_850099" class="en__field__label" style="">Do you wish to join with a concession?</label>
+	<div class="en__field__element en__field__element--radio
+" >
+		<div class="en__field__item">
+			<input id="en__field_supporter_questions_8500990" type="radio" class="en__field__input en__field__input--radio" value="Y" name="supporter.questions.850099" />
+			<label for="en__field_supporter_questions_8500990" class="en__field__label en__field__label--item" >Yes</label>
+		</div>
+		<div class="en__field__item">
+			<input id="en__field_supporter_questions_8500991" checked type="radio" class="en__field__input en__field__input--radio" value="N" name="supporter.questions.850099" />
+			<label for="en__field_supporter_questions_8500991" class="en__field__label en__field__label--item" >No</label>
+		</div>
+	</div>
+</div>
+			<input type="hidden" class="en__field__input en__field__input--hidden" name="transaction.recurrpay" value="Y" />
+
+			<input type="hidden" class="en__field__input en__field__input--hidden" name="transaction.recurrfreq" value="1" />
+
+			<div class="en__field en__field--radio en__field--849987 en__field--donationAmt en__mandatory">
+	<label for="en__field_transaction_donationAmt" class="en__field__label" style="">Donation Amount</label>
+	<div class="en__field__element en__field__element--radio
+" >
+		<div class="en__field__item">
+			<input id="en__field_transaction_donationAmt0" type="radio" class="en__field__input en__field__input--radio" value="2" name="transaction.donationAmt" />
+			<label for="en__field_transaction_donationAmt0" class="en__field__label en__field__label--item" >£2 per month</label>
+		</div>
+		<div class="en__field__item">
+			<input id="en__field_transaction_donationAmt1" type="radio" class="en__field__input en__field__input--radio" value="5" name="transaction.donationAmt" />
+			<label for="en__field_transaction_donationAmt1" class="en__field__label en__field__label--item" >£5 per month</label>
+		</div>
+		<div class="en__field__item">
+			<input id="en__field_transaction_donationAmt2" type="radio" class="en__field__input en__field__input--radio" value="10" name="transaction.donationAmt" />
+			<label for="en__field_transaction_donationAmt2" class="en__field__label en__field__label--item" >£10 per month</label>
+		</div>
+		<div class="en__field__item">
+			<input id="en__field_transaction_donationAmt3" type="radio" class="en__field__input en__field__input--radio" value="24" name="transaction.donationAmt" />
+			<label for="en__field_transaction_donationAmt3" class="en__field__label en__field__label--item" >£24 per month</label>
+		</div>
+		<div class="en__field__item">
+			<input id="en__field_transaction_donationAmt4" type="radio" class="en__field__input en__field__input--radio" value="50" name="transaction.donationAmt" />
+			<label for="en__field_transaction_donationAmt4" class="en__field__label en__field__label--item" >£50 per month</label>
+		</div>
+	</div>
+</div>
+			<div class="en__field en__field--checkbox en__field--question en__field--853744 en__field--membership-send-bag">
+	<div class="en__field__element en__field__element--checkbox
+	" >
+		<div class="en__field__item">
+			<input id="en__field_supporter_questions_853744" type="checkbox" class="en__field__input en__field__input--checkbox" value="Y" name="supporter.questions.853744" />
+			<label for="en__field_supporter_questions_853744" class="en__field__label en__field__label--item" >You are eligible to receive the free ERS bag. Uncheck the box if you would rather not receive it.</label>
+		</div>
+	</div>
+</div>
+			<div class="en__field en__field--tripleselect en__field--849988 en__field--recurrstart en__mandatory">
+	<label for="en__field_transaction_recurrstart" class="en__field__label" style="">Recurring Start Date</label>
+	<div class="en__field__element en__field__element--tripleselect">
+		<input type="hidden" name="transaction.recurrstart.delimiter" value="/">
+		<div class="en__field__item">
+			<select id="en__field_transaction_recurrstart" class="en__field__input en__field__input--tripleselect" name="transaction.recurrstart" >
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>
+		</div>
+		<div class="en__field__item">
+			<select class="en__field__input en__field__input--tripleselect" name="transaction.recurrstart" >
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+		</div>
+		<div class="en__field__item">
+			<select class="en__field__input en__field__input--tripleselect" name="transaction.recurrstart" >
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+			</select>
+		</div>
+   </div>
+</div>
+
+	
+	
+</div>
+		<div class="en__component en__component--copyblock"
+
+style="
+
+
+
+
+
+
+
+"
+>
+	<p><a class="button" href="#aboutYou">Next step</a></p>
+
+	
+	
+</div>
+		<div class="en__component en__component--copyblock subHead youSubhead"
+
+style="
+
+
+
+
+
+
+
+"
+>
+	<h2>About you</h2>
+
+	
+	
+</div>
+		<div class="en__component en__component--formblock aboutForm membForm" style="">
+	
+	
+			<div class="en__field en__field--text en__field--849990 en__field--firstName en__mandatory">
+	<label for="en__field_supporter_firstName" class="en__field__label" style="">First Name</label>
+	<div class="en__field__element en__field__element--text">
+		<input id="en__field_supporter_firstName" type="text" class="en__field__input en__field__input--text" name="supporter.firstName" value=""  />
+	 </div>
+</div>
+			<div class="en__field en__field--text en__field--849991 en__field--lastName en__mandatory">
+	<label for="en__field_supporter_lastName" class="en__field__label" style="">Last Name</label>
+	<div class="en__field__element en__field__element--text">
+		<input id="en__field_supporter_lastName" type="text" class="en__field__input en__field__input--text" name="supporter.lastName" value=""  />
+	 </div>
+</div>
+			<div class="en__field en__field--text en__field--849992 en__field--address1 en__mandatory">
+	<label for="en__field_supporter_address1" class="en__field__label" style="">Address 1</label>
+	<div class="en__field__element en__field__element--text">
+		<input id="en__field_supporter_address1" type="text" class="en__field__input en__field__input--text" name="supporter.address1" value=""  />
+	 </div>
+</div>
+			<div class="en__field en__field--text en__field--849993 en__field--address2">
+	<label for="en__field_supporter_address2" class="en__field__label" style="">Address 2</label>
+	<div class="en__field__element en__field__element--text">
+		<input id="en__field_supporter_address2" type="text" class="en__field__input en__field__input--text" name="supporter.address2" value=""  />
+	 </div>
+</div>
+			<div class="en__field en__field--text en__field--849994 en__field--city en__mandatory">
+	<label for="en__field_supporter_city" class="en__field__label" style="">City</label>
+	<div class="en__field__element en__field__element--text">
+		<input id="en__field_supporter_city" type="text" class="en__field__input en__field__input--text" name="supporter.city" value=""  />
+	 </div>
+</div>
+			<div class="en__field en__field--text en__field--849995 en__field--postcode en__mandatory">
+	<label for="en__field_supporter_postcode" class="en__field__label" style="">Postcode</label>
+	<div class="en__field__element en__field__element--text">
+		<input id="en__field_supporter_postcode" type="text" class="en__field__input en__field__input--text" name="supporter.postcode" value=""  />
+	 </div>
+</div>
+			<div class="en__field en__field--select en__field--849997 en__field--country en__mandatory">
+	<label for="en__field_supporter_country" class="en__field__label" style="">Country</label>
+		<div class="en__field__element en__field__element--select">
+		<select id="en__field_supporter_country" class="en__field__input en__field__input--select" name="supporter.country" >
+			<option selected="selected" value="GB">United Kingdom</option>
+			<option value="US">United States</option>
+			<option value="CA">Canada</option>
+			<option value="AF">Afghanistan</option>
+			<option value="AX">Åland Islands</option>
+			<option value="AL">Albania</option>
+			<option value="DZ">Algeria</option>
+			<option value="AS">American Samoa</option>
+			<option value="AD">Andorra</option>
+			<option value="AO">Angola</option>
+			<option value="AI">Anguilla</option>
+			<option value="AQ">Antarctica</option>
+			<option value="AG">Antigua and Barbuda</option>
+			<option value="AR">Argentina</option>
+			<option value="AM">Armenia</option>
+			<option value="AW">Aruba</option>
+			<option value="AU">Australia</option>
+			<option value="AT">Austria</option>
+			<option value="AZ">Azerbaijan</option>
+			<option value="BS">Bahamas</option>
+			<option value="BH">Bahrain</option>
+			<option value="BD">Bangladesh</option>
+			<option value="BB">Barbados</option>
+			<option value="BY">Belarus</option>
+			<option value="BE">Belgium</option>
+			<option value="BZ">Belize</option>
+			<option value="BJ">Benin</option>
+			<option value="BM">Bermuda</option>
+			<option value="BT">Bhutan</option>
+			<option value="BO">Bolivia, Plurinational State of</option>
+			<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+			<option value="BA">Bosnia and Herzegovina</option>
+			<option value="BW">Botswana</option>
+			<option value="BV">Bouvet Island</option>
+			<option value="BR">Brazil</option>
+			<option value="IO">British Indian Ocean Territory</option>
+			<option value="BN">Brunei Darussalam</option>
+			<option value="BG">Bulgaria</option>
+			<option value="BF">Burkina Faso</option>
+			<option value="BI">Burundi</option>
+			<option value="CV">Cabo Verde</option>
+			<option value="KH">Cambodia</option>
+			<option value="CM">Cameroon</option>
+			<option value="KY">Cayman Islands</option>
+			<option value="CF">Central African Republic</option>
+			<option value="TD">Chad</option>
+			<option value="CL">Chile</option>
+			<option value="CN">China</option>
+			<option value="CX">Christmas Island</option>
+			<option value="CC">Cocos (Keeling) Islands</option>
+			<option value="CO">Colombia</option>
+			<option value="KM">Comoros</option>
+			<option value="CG">Congo</option>
+			<option value="CD">Congo, the Democratic Republic of the</option>
+			<option value="CK">Cook Islands</option>
+			<option value="CR">Costa Rica</option>
+			<option value="CI">Côte d&#39;Ivoire</option>
+			<option value="HR">Croatia</option>
+			<option value="CU">Cuba</option>
+			<option value="CW">Curaçao</option>
+			<option value="CY">Cyprus</option>
+			<option value="CZ">Czech Republic</option>
+			<option value="DK">Denmark</option>
+			<option value="DJ">Djibouti</option>
+			<option value="DM">Dominica</option>
+			<option value="DO">Dominican Republic</option>
+			<option value="EC">Ecuador</option>
+			<option value="EG">Egypt</option>
+			<option value="SV">El Salvador</option>
+			<option value="GQ">Equatorial Guinea</option>
+			<option value="ER">Eritrea</option>
+			<option value="EE">Estonia</option>
+			<option value="ET">Ethiopia</option>
+			<option value="FK">Falkland Islands (Malvinas)</option>
+			<option value="FO">Faroe Islands</option>
+			<option value="FJ">Fiji</option>
+			<option value="FI">Finland</option>
+			<option value="FR">France</option>
+			<option value="GF">French Guiana</option>
+			<option value="PF">French Polynesia</option>
+			<option value="TF">French Southern Territories</option>
+			<option value="GA">Gabon</option>
+			<option value="GM">Gambia</option>
+			<option value="GE">Georgia</option>
+			<option value="DE">Germany</option>
+			<option value="GH">Ghana</option>
+			<option value="GI">Gibraltar</option>
+			<option value="GR">Greece</option>
+			<option value="GL">Greenland</option>
+			<option value="GD">Grenada</option>
+			<option value="GP">Guadeloupe</option>
+			<option value="GU">Guam</option>
+			<option value="GT">Guatemala</option>
+			<option value="GG">Guernsey</option>
+			<option value="GN">Guinea</option>
+			<option value="GW">Guinea-Bissau</option>
+			<option value="GY">Guyana</option>
+			<option value="HT">Haiti</option>
+			<option value="HM">Heard Island and McDonald Islands</option>
+			<option value="VA">Holy See (Vatican City State)</option>
+			<option value="HN">Honduras</option>
+			<option value="HK">Hong Kong</option>
+			<option value="HU">Hungary</option>
+			<option value="IS">Iceland</option>
+			<option value="IN">India</option>
+			<option value="ID">Indonesia</option>
+			<option value="IR">Iran, Islamic Republic of</option>
+			<option value="IQ">Iraq</option>
+			<option value="IE">Ireland</option>
+			<option value="IM">Isle of Man</option>
+			<option value="IL">Israel</option>
+			<option value="IT">Italy</option>
+			<option value="JM">Jamaica</option>
+			<option value="JP">Japan</option>
+			<option value="JE">Jersey</option>
+			<option value="JO">Jordan</option>
+			<option value="KZ">Kazakhstan</option>
+			<option value="KE">Kenya</option>
+			<option value="KI">Kiribati</option>
+			<option value="KP">Korea, Democratic People&#39;s Republic of</option>
+			<option value="KR">Korea, Republic of</option>
+			<option value="KW">Kuwait</option>
+			<option value="KG">Kyrgyzstan</option>
+			<option value="LA">Lao People&#39;s Democratic Republic</option>
+			<option value="LV">Latvia</option>
+			<option value="LB">Lebanon</option>
+			<option value="LS">Lesotho</option>
+			<option value="LR">Liberia</option>
+			<option value="LY">Libya</option>
+			<option value="LI">Liechtenstein</option>
+			<option value="LT">Lithuania</option>
+			<option value="LU">Luxembourg</option>
+			<option value="MO">Macao</option>
+			<option value="MK">Macedonia, the former Yugoslav Republic of</option>
+			<option value="MG">Madagascar</option>
+			<option value="MW">Malawi</option>
+			<option value="MY">Malaysia</option>
+			<option value="MV">Maldives</option>
+			<option value="ML">Mali</option>
+			<option value="MT">Malta</option>
+			<option value="MH">Marshall Islands</option>
+			<option value="MQ">Martinique</option>
+			<option value="MR">Mauritania</option>
+			<option value="MU">Mauritius</option>
+			<option value="YT">Mayotte</option>
+			<option value="MX">Mexico</option>
+			<option value="FM">Micronesia, Federated States of</option>
+			<option value="MD">Moldova, Republic of</option>
+			<option value="MC">Monaco</option>
+			<option value="MN">Mongolia</option>
+			<option value="ME">Montenegro</option>
+			<option value="MS">Montserrat</option>
+			<option value="MA">Morocco</option>
+			<option value="MZ">Mozambique</option>
+			<option value="MM">Myanmar</option>
+			<option value="NA">Namibia</option>
+			<option value="NR">Nauru</option>
+			<option value="NP">Nepal</option>
+			<option value="NL">Netherlands</option>
+			<option value="NC">New Caledonia</option>
+			<option value="NZ">New Zealand</option>
+			<option value="NI">Nicaragua</option>
+			<option value="NE">Niger</option>
+			<option value="NG">Nigeria</option>
+			<option value="NU">Niue</option>
+			<option value="NF">Norfolk Island</option>
+			<option value="MP">Northern Mariana Islands</option>
+			<option value="NO">Norway</option>
+			<option value="OM">Oman</option>
+			<option value="PK">Pakistan</option>
+			<option value="PW">Palau</option>
+			<option value="PS">Palestine, State of</option>
+			<option value="PA">Panama</option>
+			<option value="PG">Papua New Guinea</option>
+			<option value="PY">Paraguay</option>
+			<option value="PE">Peru</option>
+			<option value="PH">Philippines</option>
+			<option value="PN">Pitcairn</option>
+			<option value="PL">Poland</option>
+			<option value="PT">Portugal</option>
+			<option value="PR">Puerto Rico</option>
+			<option value="QA">Qatar</option>
+			<option value="RE">Réunion</option>
+			<option value="RO">Romania</option>
+			<option value="RU">Russian Federation</option>
+			<option value="RW">Rwanda</option>
+			<option value="BL">Saint Barthélemy</option>
+			<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+			<option value="KN">Saint Kitts and Nevis</option>
+			<option value="LC">Saint Lucia</option>
+			<option value="MF">Saint Martin (French part)</option>
+			<option value="PM">Saint Pierre and Miquelon</option>
+			<option value="VC">Saint Vincent and the Grenadines</option>
+			<option value="WS">Samoa</option>
+			<option value="SM">San Marino</option>
+			<option value="ST">Sao Tome and Principe</option>
+			<option value="SA">Saudi Arabia</option>
+			<option value="SN">Senegal</option>
+			<option value="RS">Serbia</option>
+			<option value="SC">Seychelles</option>
+			<option value="SL">Sierra Leone</option>
+			<option value="SG">Singapore</option>
+			<option value="SX">Sint Maarten (Dutch part)</option>
+			<option value="SK">Slovakia</option>
+			<option value="SI">Slovenia</option>
+			<option value="SB">Solomon Islands</option>
+			<option value="SO">Somalia</option>
+			<option value="ZA">South Africa</option>
+			<option value="GS">South Georgia and the South Sandwich Islands</option>
+			<option value="SS">South Sudan</option>
+			<option value="ES">Spain</option>
+			<option value="LK">Sri Lanka</option>
+			<option value="SD">Sudan</option>
+			<option value="SR">Suriname</option>
+			<option value="SJ">Svalbard and Jan Mayen</option>
+			<option value="SZ">Swaziland</option>
+			<option value="SE">Sweden</option>
+			<option value="CH">Switzerland</option>
+			<option value="SY">Syrian Arab Republic</option>
+			<option value="TW">Taiwan, Province of China</option>
+			<option value="TJ">Tajikistan</option>
+			<option value="TZ">Tanzania, United Republic of</option>
+			<option value="TH">Thailand</option>
+			<option value="TL">Timor-Leste</option>
+			<option value="TG">Togo</option>
+			<option value="TK">Tokelau</option>
+			<option value="TO">Tonga</option>
+			<option value="TT">Trinidad and Tobago</option>
+			<option value="TN">Tunisia</option>
+			<option value="TR">Turkey</option>
+			<option value="TM">Turkmenistan</option>
+			<option value="TC">Turks and Caicos Islands</option>
+			<option value="TV">Tuvalu</option>
+			<option value="UG">Uganda</option>
+			<option value="UA">Ukraine</option>
+			<option value="AE">United Arab Emirates</option>
+			<option value="UM">United States Minor Outlying Islands</option>
+			<option value="UY">Uruguay</option>
+			<option value="UZ">Uzbekistan</option>
+			<option value="VU">Vanuatu</option>
+			<option value="VE">Venezuela, Bolivarian Republic of</option>
+			<option value="VN">Viet Nam</option>
+			<option value="VG">Virgin Islands, British</option>
+			<option value="VI">Virgin Islands, U.S.</option>
+			<option value="WF">Wallis and Futuna</option>
+			<option value="EH">Western Sahara</option>
+			<option value="YE">Yemen</option>
+			<option value="ZM">Zambia</option>
+			<option value="ZW">Zimbabwe</option>
+		</select>
+	</div>
+</div>
+			<div class="en__field en__field--text en__field--849996 en__field--emailAddress en__mandatory">
+	<label for="en__field_supporter_emailAddress" class="en__field__label" style="">Email Address</label>
+	<div class="en__field__element en__field__element--text">
+		<input id="en__field_supporter_emailAddress" type="text" class="en__field__input en__field__input--text" name="supporter.emailAddress" value=""  />
+	 </div>
+</div>
+
+	
+	
+</div>
+		<div class="en__component en__component--copyblock"
+
+style="
+
+
+
+
+
+
+
+"
+>
+	<p><a class="button" href="#bankDetails">Last step - please add bank details</a></p>
+
+	
+	
+</div>
+		<div class="en__component en__component--copyblock subHead paySubhead"
+
+style="
+
+
+
+
+
+
+
+"
+>
+	<h2>Payment details</h2>
+
+	
+	
+</div>
+		<div class="en__component en__component--formblock payForm membForm" style="">
+	
+	
+			<div class="en__field en__field--text en__field--850003 en__field--creditCardHolderName en__mandatory">
+	<label for="en__field_supporter_creditCardHolderName" class="en__field__label" style="">Card Holder Name</label>
+	<div class="en__field__element en__field__element--text">
+		<input id="en__field_supporter_creditCardHolderName" type="text" class="en__field__input en__field__input--text" name="supporter.creditCardHolderName" value=""  />
+	 </div>
+</div>
+			<div class="en__field en__field--text en__field--850001 en__field--bankAccountNumber en__mandatory">
+	<label for="en__field_supporter_bankAccountNumber" class="en__field__label" style="">Bank Account Number</label>
+	<div class="en__field__element en__field__element--text">
+		<input id="en__field_supporter_bankAccountNumber" type="text" class="en__field__input en__field__input--text" name="supporter.bankAccountNumber" value=""  />
+	 </div>
+</div>
+			<div class="en__field en__field--text en__field--850002 en__field--bankRoutingNumber en__mandatory">
+	<label for="en__field_supporter_bankRoutingNumber" class="en__field__label" style="">Sort code</label>
+	<div class="en__field__element en__field__element--text">
+		<input id="en__field_supporter_bankRoutingNumber" type="text" class="en__field__input en__field__input--text" name="supporter.bankRoutingNumber" value=""  />
+	 </div>
+</div>
+
+	
+	<div class="en__submit"><button style="">Join now</button></div>
+</div>
+		<div class="en__component en__component--codeblock"><script>
+    console.log("script")
+    var daysAdd = 21;
+    var earliestDate = new Date(); // Set to now at moment
+    earliestDate.setDate(earliestDate.getDate() + daysAdd); // Add days
+    var earliestDay = earliestDate.getDate();
+    var earliestMonth = earliestDate.getMonth() + 1;
+    var earliestYear = earliestDate.getFullYear();	
+    // Day - can only be 05 or 20
+    if (earliestDay <= 5) {
+    	earliestDay = "05";
+    }
+    if (earliestDay > 5 && earliestDay <= 20) {
+    	earliestDay = "20";
+    }
+    if (earliestDay > 20) {
+    	earliestDay = "05";
+    	earliestMonth++;
+    	if (earliestMonth == 13) {
+    		earliestMonth = 1;
+    		earliestYear++;
+    	}
+    }
+    if (earliestMonth < 10) {
+    	earliestMonth = "0" + earliestMonth;
+    }
+    console.log(earliestDay + ":" + earliestMonth + ":" + earliestYear)
+    //$(".en__field--recurrstart > div > div:nth-child(2) > select").val(earliestDay);
+    //$(".en__field--recurrstart > div > div:nth-child(3) > select").val(earliestMonth);
+    //$(".en__field--recurrstart > div > div:nth-child(4) > select").val(earliestYear);
+    
+    $('.en__field--recurrstart > div > div:nth-child(2) > select')
+        .find('option')
+        .remove()
+        .end()
+        .append('<option value=' + earliestDay + '>' + earliestDay + '</option>')
+        .val(earliestDay)
+    ;
+    $('.en__field--recurrstart > div > div:nth-child(3) > select')
+        .find('option')
+        .remove()
+        .end()
+        .append('<option value=' + earliestMonth + '>' + earliestMonth + '</option>')
+        .val(earliestMonth)
+    ;
+    $('.en__field--recurrstart > div > div:nth-child(4) > select')
+        .find('option')
+        .remove()
+        .end()
+        .append('<option value=' + earliestYear + '>' + earliestYear + '</option>')
+        .val(earliestYear)
+    ;
+    
+    
+    //$('.en__field__input--tripleselect').prop("disabled", true); 
+</script></div>
+</div>
+</div>
+</form>                    </div><!-- .content-block -->
+                </main><!-- #main -->
+            </div><!-- .container-fluid -->
+        </div><!-- #primary -->
+    </div><!-- #content -->
+
+<footer id="colophon" class="ers-site-footer" role="contentinfo">
+	<section class="ers-site-footer__main">
+		<div class="container-fluid">
+			<div class="ers-site-footer__newsletter">
+				<h2>
+					Sign up for updates from Electoral Reform Society				</h2>
+
+				<a class="btn btn_secondary modal-btn" href="https://action.electoral-reform.org.uk/page/5802/subscribe/1" target="_blank">
+					Join our newsletter >
+				</a>
+			</div>
+
+			<div class="ers-site-footer__content">
+				<div class="ers-site-footer__about">
+					<h2>
+						About Electoral Reform Society					</h2>
+
+					<p>The Electoral Reform Society is an independent campaigning organisation working to champion the rights of voters and build a better democracy in Great Britain and Northern Ireland. </p>
+				</div>
+
+				<div class="ers-site-footer__jobs">
+					<h2>
+						Jobs at ERS					</h2>
+
+
+										<p class="follow-link">
+						<a href="https://www.electoral-reform.org.uk/jobs/">Find out more ></a>
+					</p>
+									</div>
+
+								<div class="ers-site-footer__social">
+					<h2>Join us online</h2>
+
+					<ul class="link-list link-list--dark two-columns">
+													<li>
+								<a href="https://www.facebook.com/electoralreformsociety" title="Facebook">
+									<i class="icon icon--social">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1792"><path fill="#fff" d="M1248 128q119 0 203.5 84.5T1536 416v960q0 119-84.5 203.5T1248 1664h-188v-595h199l30-232h-229V689q0-56 23.5-84t91.5-28l122-1V369q-63-9-178-9-136 0-217.5 80T820 666v171H620v232h200v595H288q-119 0-203.5-84.5T0 1376V416q0-119 84.5-203.5T288 128h960z"/></svg>									</i>Facebook								</a>
+							</li>
+													<li>
+								<a href="https://www.youtube.com/user/ElectoralReformSoc" title="YouTube">
+									<i class="icon icon--social">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1792"><path fill="#fff" d="M971 1244v211q0 67-39 67-23 0-45-22v-301q22-22 45-22 39 0 39 67zm338 1v46h-90v-46q0-68 45-68t45 68zm-966-218h107v-94H138v94h105v569h100v-569zm288 569h89v-494h-89v378q-30 42-57 42-18 0-21-21-1-3-1-35v-364h-89v391q0 49 8 73 12 37 58 37 48 0 102-61v54zm429-148v-197q0-73-9-99-17-56-71-56-50 0-93 54V933h-89v663h89v-48q45 55 93 55 54 0 71-55 9-27 9-100zm338-10v-13h-91q0 51-2 61-7 36-40 36-46 0-46-69v-87h179v-103q0-79-27-116-39-51-106-51-68 0-107 51-28 37-28 116v173q0 79 29 116 39 51 108 51 72 0 108-53 18-27 21-54 2-9 2-58zM790 525V315q0-69-43-69t-43 69v210q0 70 43 70t43-70zm719 751q0 234-26 350-14 59-58 99t-102 46q-184 21-555 21t-555-21q-58-6-102.5-46T53 1626q-26-112-26-350 0-234 26-350 14-59 58-99t103-47q183-20 554-20t555 20q58 7 102.5 47t57.5 99q26 112 26 350zM511 0h102L492 399v271H392V399q-14-74-61-212Q294 84 266 0h106l71 263zm370 333v175q0 81-28 118-37 51-106 51-67 0-105-51-28-38-28-118V333q0-80 28-117 38-51 105-51 69 0 106 51 28 37 28 117zm335-162v499h-91v-55q-53 62-103 62-46 0-59-37-8-24-8-75V171h91v367q0 33 1 35 3 22 21 22 27 0 57-43V171h91z"/></svg>									</i>YouTube								</a>
+							</li>
+													<li>
+								<a href="https://twitter.com/electoralreform" title="Twitter">
+									<i class="icon icon--social">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1664 1792"><path fill="#fff" d="M1620 408q-67 98-162 167 1 14 1 42 0 130-38 259.5T1305.5 1125 1121 1335.5t-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5T221 1033q33 5 61 5 43 0 85-11-112-23-185.5-111.5T108 710v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5T820 653q-8-38-8-74 0-134 94.5-228.5T1135 256q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg>									</i>Twitter								</a>
+							</li>
+											</ul>
+				</div>
+							</div>
+		</div>
+	</section>
+
+	<section class="ers-site-footer__site-info">
+		<div class="container-fluid">
+		    <ul id="menu-footer-bottom" class="link-list link-list--dark link-list--horizontal link-list--underline"><li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="https://www.electoral-reform.org.uk/accessibility/">Accessibility</a></li>
+<li id="menu-item-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109"><a href="https://www.electoral-reform.org.uk/privacy-and-cookies/">Privacy &amp; Cookies</a></li>
+<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="https://www.electoral-reform.org.uk/who-we-are/contact-us/">Contact us</a></li>
+</ul>
+			<div class="ers-site-footer__satellite">
+				<p>A company limited by guarantee. registered in London, no. 958404. All content © 2017 Electoral Reform Society</p>
+			</div>
+
+			<p class="ers-site-footer__site-by">
+				Website by <a href="http://www.reasondigital.com/" rel="designer">Reason Digital</a>
+			</p>
+		</div>
+	</section>
+</footer>
+
+<script type='text/javascript' src='https://www.electoral-reform.org.uk/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.electoral-reform.org.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.electoral-reform.org.uk/wp-content/themes/fonzie/js/min/moment.js?ver=4.8'></script>
+<script type='text/javascript' src='https://www.electoral-reform.org.uk/wp-content/themes/fonzie/js/min/daterangepicker.js?ver=4.8'></script>
+<script type='text/javascript' src='https://www.electoral-reform.org.uk/wp-content/themes/fonzie/js/min/slick.min.js?ver=4.8'></script>
+<script type='text/javascript' src='https://www.electoral-reform.org.uk/wp-content/themes/fonzie/js/min/scripts.min.js?ver=20120206'></script>
+<script>
+$( document ).ready(function() {
+    $('.en__field--donationAmt .en__field__label--item').html(function(){
+    return $(this).html().replace('per month','<br/><span class="perMonth">per month</span>');
+});
+});
+</script>
+
+<!-- Andrew begin -->
+<script>
+
+    function addCloseBtn(){
+
+        $('.aims-objectives-block').prepend('<a href="#" class="closeOverlay" id="closeOverlay">Close</a>');
+    }
+
+    function closeOverlay(){
+
+        $('body').on('click', '#closeOverlay', function(event){
+
+            event.preventDefault();
+            $('.aims-objectives-block').removeClass('open');
+
+        });
+    }
+
+    function scrollToElem(elem){
+
+        if ( $(elem).length ) {
+
+            $('body, html').animate({
+                scrollTop: $(elem).offset().top
+                },
+                600
+            );
+        }
+    }
+
+    function openOverlay(){
+
+        $('a[href^="#aims"]').on('click', function(){
+            console.log('button clicked');
+            $('.aims-objectives-block').addClass('open');
+        });
+    }
+
+    function sectionActivate(cl, elem){
+
+        $(cl).slideDown('600', function(){
+            scrollToElem(elem);
+        });
+    }
+
+    function sectionDeactive(elem){
+
+        $(elem).slideUp();
+    }
+
+    function styleChange(elem, cl){
+
+        $(elem).addClass(cl);
+    }
+
+    function makeAccordion(elem){
+
+        $(elem).addClass('accordion');
+    }
+
+    function accordion(){
+
+        $('body').on('click', '.accordion', function(){
+
+            console.log('xxx');
+            $(this).next('.en__component').slideToggle();
+
+        });
+    }
+
+    function aimsAccepted(){
+
+        $('.aims-objectives-block .button').on('click', function(event){
+
+            $('.aims-objectives-block').removeClass('open');
+            $('#en__field_supporter_questions_849904').attr('checked', true);
+            $('a[href^="#aims"]').css('visibility','hidden');
+            event.preventDefault();
+
+            sectionActivate('.amountForm'); 
+            styleChange('.amountSubhead','active');
+            scrollToElem('#en__field_supporter_questions_849904');
+        });
+
+    }
+
+    function nextStep(){
+
+        $('a[href^="#aboutYou"]').on('click', function(event){
+ 
+            event.preventDefault();
+            sectionDeactive('.amountForm');
+            sectionActivate('.aboutForm','.youSubhead'); 
+            styleChange('.youSubhead','active');
+            makeAccordion('.amountSubhead');
+        });
+    }
+
+    function lastStep(){
+
+        $('a[href^="#bankDetails"]').on('click', function(event){
+
+            event.preventDefault();
+            sectionDeactive('.aboutForm');
+            sectionActivate('.payForm','.paySubhead'); 
+            styleChange('.paySubhead','active');
+            makeAccordion('.youSubhead');
+        });
+    }
+    
+
+    $( document ).ready(function() {
+
+        addCloseBtn();
+        closeOverlay();
+        openOverlay();
+        aimsAccepted();
+        nextStep();
+        lastStep();
+        accordion();
+    });
+</script>
+<!--Andrew end -->
+
+</body>
+</html>
+<!-- Membership LS 2021:73434:201821:1754 -->

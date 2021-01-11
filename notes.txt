@@ -1,0 +1,59 @@
+Remember that other project I mentioned, to add some JS flourish to some membership pages?
+
+ 
+
+Here’s the link to the WIP
+
+https://electoral-reform.netdonor.net/page/73434/donate/1?mode=DEMO
+
+ 
+
+Would you have time first half of next week to work on this?
+
+ 
+
+So what we need to happen is:
+
+ 
+
+-          CLICK Quick read - Aims and Objectives > Bring up overlay with the text and ‘agree’ button as per the mock up **DONE
+
+-          CLICK  'I agree' - overlay disappears and the checkbox appears on the form and is checked. **DONE 'Quick read' button disappears.**DONE
+
+-          First subhead (Membership amount) becomes active – form block underneath become visible, heading has pink background **DONE
+
+-          On click of 'next step' the next heading (payment details) becomes active with contents beneath **DONE. Heading above collapses (stays pink) and now works like an accordion (user can expand/minimise)
+
+-          On click of 'last step' same happens again to this form block.
+
+ 
+
+Each form block beneath their respective headings has a unique class. They are:
+
+ 
+
+-          amountForm
+
+-          aboutForm
+
+-          payForm
+
+ 
+
+And each subheading block has its own unique class:
+
+ 
+
+-          amountSubhead
+
+-          youSubhead
+
+-          paySubhead
+
+ 
+
+I have attached the mock up to show some of the actions here. Any thoughts/questions? If you have time early next week we can get this one finished and signed off pretty quick J
+
+ 
+
+
